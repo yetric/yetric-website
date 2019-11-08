@@ -2,7 +2,7 @@
 title: User Acquisition - Yetric AB
 ---
 
-# We Improve Acquisition
+# We Improve _Acquisition_
 
 By using Yetric's Product Portfolio you will get tools that focus on making your acquisition funnel even more efficient than it is today. You do not want to pay expensive ad fees without knowing how efficient your acquisition channel is. We take care of that for you, so you can focus on making your business even better for your customers.
 

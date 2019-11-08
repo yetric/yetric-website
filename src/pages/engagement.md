@@ -2,7 +2,7 @@
 title: User Engagement - Yetric AB
 ---
 
-# We Measure Engagement
+# We Measure _Engagement_
 
 Ok, you have created a ton of cool features for your product. Which one is just for show and which one does actually drive engagement and earnings. By knowing what features drives most engagement you will have knowledge about your product, making it easier to focus and prioritize your ongoing efforts tuning your products into efficient money machines.
 

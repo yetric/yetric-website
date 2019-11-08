@@ -2,7 +2,7 @@
 title: Onboarding New Users - Yetric AB
 ---
 
-# We Like to Tweak Onboarding
+# We Like to Tweak _Onboarding_
 
 One of the most daunting tasks of any product is to show the customer what it has to offer before he/she gets bored and leave. Yetric enables a better plan and tools for onboarding your valuable leads. It doesn't matter how cool feature you have if you can't teach your users how to use them and where to find them.
 

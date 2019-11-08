@@ -2,7 +2,7 @@
 title: User Retention - Yetric AB
 ---
 
-# We Help Increase Retention
+# We Help Increase _Retention_
 
 A lot of companies only focus on acquisition, which can be quite expensive, new customers cost more than retaining already existing ones that have stopped using your products. We offer you the tools that helps you engage and retain your churned customers.
 

@@ -62,12 +62,17 @@ a[href] {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "IBM Plex Sans Condensed",sans-serif;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
     line-height: 1.1;
-    font-weight: 300;
     margin: 1.5em 0 .5em;
+    font-weight: 300;
     &:first-child {
         margin-top: .5em;
+    }
+    > em {
+        font-style: normal;
+        color: $nord11;
+        font-weight: 400;
     }
 }
 
