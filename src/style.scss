@@ -54,7 +54,7 @@ body {
 }
 
 a[href] {
-    color: #369;
+    color: #3b75b0;
     text-decoration: none;
     &:hover {
         text-decoration: underline;
@@ -137,6 +137,12 @@ a.btn {
                 top: -2px;
                 margin-right: 4px;
                 color: #8b8b8b;
+                font-weight: 300;
+            }
+            a {
+                strong {
+                    font-weight: 600;
+                }
             }
         }
     }
