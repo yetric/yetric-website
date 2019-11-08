@@ -4,6 +4,8 @@ title: Yetric CMS
 
 # We are Yetric
 
+**Data Driven User Experience**
+
 Building and growing your online products is all about knowing your numbers and data and working on stuff that matters. How do you <strong>acquire valuable leads</strong> to your product? How do you make sure that you have taught them all they need to know about your product when <strong>onboarding new users</strong>? How do you <strong>keep your customers engaged</strong> in your product and how do you <strong>retain customers</strong> that for some reason have stopped using your product.
 
 Yetric helps you and your team become data-driven and more iterative (faster, smaller and more iterations) in your efforts in order to be able to know where to put down your efforts and get most bang-for-the-buck. For us growth is the main thing, and we think you grow your business by knowing what your user wants and what turns them off.
@@ -20,3 +22,10 @@ Yetric helps you and your team become data-driven and more iterative (faster, sm
 
 -   [About Us](/about)
 -   [Contact Us](/contact)
+
+## Find out more about Yetric
+
+-   [Yetric Blog about User Experience, Software and Product Development](https://yetric.com)
+-   [Yetric on Twitter](https://twitter.com/yetriccom)
+-   [Yetric on Facebook](https://www.facebook.com/yetricapp)
+-   [Code from Yetric at Github](https://github.com/yetric)
