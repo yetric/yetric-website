@@ -48,10 +48,9 @@ const matchRoute = (path, traversableRoutes) => {
         let found = path.match(traversableRoutes[i].path);
         if (found) {
             let module = traversableRoutes[i].module;
-            let args = found.slice(1);
             return {
                 module,
-                args
+                args: found.slice(1)
             };
         }
     }
