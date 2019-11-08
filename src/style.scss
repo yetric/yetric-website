@@ -119,6 +119,14 @@ p {
     }
 }
 
+hr {
+    border-width: 0px;
+    border-style: none;
+    border-top: 1px solid $nord6;
+    margin: 30px 0 0 0;
+    line-height: 0;
+}
+
 a.btn {
     display: inline-block;
     background: $nord9;
@@ -142,7 +150,9 @@ a.btn {
     ul {
         list-style: none;
         padding: 0;
+        margin: 1.75em 0 .75em 0;
         li {
+            padding: 6px 0;
             &:before {
                 content: ">";
                 font-size: 12px;

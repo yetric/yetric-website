@@ -12,6 +12,8 @@ Yetric helps you and your team become data-driven and more iterative (faster, sm
 
 <a href="/contact" class="btn">Contact Us</a>
 
+---
+
 ## What we _do_ at Yetric
 
 -   [Data Driven **User Experience**](/user-experience)

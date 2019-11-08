@@ -6,15 +6,27 @@ title: Contact Us - Yetric AB
 
 There are a couple of ways to get in contact with us. The recommended way is to use the contact form here. You can also contact us using:
 
-<ul>
-    <li>Twitter</li>
-    <li>Facebook</li>
-    <li>E-mail</li>
-    <li>Address</li>
-    <li>Map</li>
-</ul>
+-   [Twitter](https://twitter.com/yetriccom)
+-   [Facebook](https://twitter.com/yetriccom)
+-   [E-mail](#contact-form)
+-   [Address](#contact-address)
+-   [Map](#contact-map)
+
+---
 
 ## Contact Form
+
+Coming ...
+
+---
+
+## Contact Address
+
+Coming ...
+
+---
+
+## Contact Map
 
 Coming ...
 
