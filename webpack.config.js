@@ -49,6 +49,7 @@ const overrides = devMode
 const webpackConfig = {
     entry: './src/index.js',
     output: {
+        publicPath: '/',
         filename: devMode ? '[name].js' : '[name].[hash].js',
         path: path.resolve(__dirname, 'public')
     },
