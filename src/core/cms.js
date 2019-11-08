@@ -23,7 +23,7 @@ const parseForImages = (page) => {
 };
 
 export const loadPage = async (tpl, type = 'pages') => {
-    setAppContent('Laddar sida');
+    setAppContent('Loading ...');
     try {
         let page = null;
         if (pageCache.hasOwnProperty(tpl)) {

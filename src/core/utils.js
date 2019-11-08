@@ -3,6 +3,24 @@ export const getTracker = () => {
     return 'ga' in window ? ga.getAll()[0] : null;
 };
 
+export const fetchFeed = async (url) => {
+    let response = await fetch(url);
+    let xml = await response.text();
+    let data = await new window.DOMParser().parseFromString(xml, 'text/xml');
+    return Array.from(data.documentElement.getElementsByTagName('item')).map((item) => {
+        let title = item.getElementsByTagName('title')[0].textContent;
+        let description = item.getElementsByTagName('description')[0].textContent;
+        let link = item.getElementsByTagName('link')[0].textContent;
+        let published = item.getElementsByTagName('pubDate')[0].textContent;
+        return {
+            title,
+            description,
+            link,
+            published: new Date(published).toLocaleDateString('sv-SE')
+        };
+    });
+};
+
 export const send = (...args) => {
     const tracker = getTracker();
     tracker && tracker.send.apply(tracker, args);
