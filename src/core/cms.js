@@ -1,4 +1,4 @@
-import {isAbsolute, trackPageView} from './utils';
+import {isAbsolute, setAttributes, trackPageView} from './utils';
 import {triggerEvent, on} from './events';
 
 let APP_ROUTES = [];
@@ -101,10 +101,13 @@ const navigateHandler = async (event) => {
 export const nav = async (routes) => {
     APP_ROUTES = routesToTraversable(routes);
     const callbacks = [];
+
     window.addEventListener('popstate', popStateHandler);
     window.addEventListener('beforeunload', removeNavHandlers);
     document.addEventListener('click', navigateHandler);
+
     await navigate(document.location.pathname, false);
+
     on(document, 'nav', (event) => {
         callbacks.forEach((callback) => callback(event.detail));
     });
