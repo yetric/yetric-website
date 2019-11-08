@@ -16,4 +16,6 @@ There are a couple of ways to get in contact with us. The recommended way is to 
 
 ## Contact Form
 
+Coming ...
+
 [Home](/)
