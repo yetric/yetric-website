@@ -19,6 +19,7 @@ Yetric helps you and your team become data-driven and more iterative (faster, sm
 -   [**Onboarding** New Users](/onboarding)
 -   [User **Engagement**](/engagement)
 -   [User **Retention**](/retention)
+-   [Write **Blog Posts** about stuff we like](/posts)
 
 ## Who we _are_ at Yetric
 

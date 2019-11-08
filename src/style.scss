@@ -61,6 +61,19 @@ a[href] {
     }
 }
 
+blockquote {
+    background: $nord6;
+    margin: 20px 0;
+    padding: 6px 40px;
+    font-family: "IBM Plex Serif", serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.5;
+    color: $nord3;
+    border-left: 4px solid $nord5;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "IBM Plex Sans Condensed", sans-serif;
     line-height: 1.1;
