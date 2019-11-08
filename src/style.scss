@@ -110,6 +110,21 @@ a.btn {
     padding: 20px;
     background: #fff;
     border: 1px solid $nord4;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            &:before {
+                content: ">";
+                font-size: 12px;
+                position: relative;
+                top: -2px;
+                margin-right: 4px;
+                color: #8b8b8b;
+            }
+        }
+    }
 }
 
 .main {
