@@ -18,6 +18,10 @@ export const setAppTitle = (title) => {
     document.title = title;
 };
 
+const parseForImages = (page) => {
+    return page;
+};
+
 export const loadPage = async (tpl, type = 'pages') => {
     setAppContent('Laddar sida');
     try {
@@ -26,6 +30,9 @@ export const loadPage = async (tpl, type = 'pages') => {
             page = pageCache[tpl];
         } else {
             page = await import(`../${type}/${tpl}.md`);
+
+            page = parseForImages(page);
+
             pageCache[tpl] = page;
         }
         setAppContent(page.html);
