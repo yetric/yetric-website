@@ -32,8 +32,8 @@ export const removeMetaTag = (metaType, value) => {
 };
 
 export const handle404 = async (error) => {
-    await setMetaTag('robots', 'noindex');
     const fourOhFour = await import(`../pages/404.md`);
+    setMetaTag('robots', 'noindex');
     setAppTitle(fourOhFour.attributes.title || document.title);
     setAppContent(fourOhFour.html);
     onError(error);
@@ -79,7 +79,7 @@ export const loadPage = async (tpl, type = 'pages') => {
             page = parseForImages(page);
             pageCache[tpl] = page;
         }
-        await removeMetaTag('robots', 'noindex');
+        removeMetaTag('robots', 'noindex');
         setAppContent(page.html);
         setAppTitle(page.attributes.title || document.title);
     } catch (error) {
