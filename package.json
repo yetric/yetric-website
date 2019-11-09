@@ -6,7 +6,9 @@
     "private": true,
     "scripts": {
         "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --open --mode=development",
-        "build": "cross-env NODE_ENV=production webpack --mode=production"
+        "build": "cross-env NODE_ENV=production webpack --mode=production",
+        "prettier": "prettier --write ./**/*.{js,css,json,md}",
+        "test": "jest"
     },
     "repository": {
         "type": "git",
