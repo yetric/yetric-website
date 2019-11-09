@@ -9,6 +9,35 @@ export const prefetch = async (tpl, type) => {
     pageCache[tpl] = await import(`../${type}/${tpl}.md`);
     return true;
 };
+export const onError = (error) => {
+    console.error(error);
+};
+/* WiP - Handle 404 with noindex meta tag */
+export const injectToHead = (elm) => {
+    document.getElementsByTagName('head')[0].appendChild(elm);
+};
+
+export const setMetaTag = (metaType, value) => {
+    const metaTag = document.createElement('meta');
+    setAttributes(metaTag, {
+        name: metaType,
+        content: value
+    });
+    injectToHead(metaTag);
+};
+
+export const removeMetaTag = (metaType, value) => {
+    const tag = document.querySelector(`[name="${metaType}"][content="${value}"]`);
+    tag && tag.remove();
+};
+
+export const handle404 = async (error) => {
+    await setMetaTag('robots', 'noindex');
+    const fourOhFour = await import(`../pages/404.md`);
+    setAppTitle(fourOhFour.attributes.title || document.title);
+    setAppContent(fourOhFour.html);
+    onError(error);
+};
 
 export const setAppContent = (html) => {
     appRoot.innerHTML = html;
@@ -47,15 +76,14 @@ export const loadPage = async (tpl, type = 'pages') => {
             page = pageCache[tpl];
         } else {
             page = await import(`../${type}/${tpl}.md`);
-
             page = parseForImages(page);
-
             pageCache[tpl] = page;
         }
+        await removeMetaTag('robots', 'noindex');
         setAppContent(page.html);
         setAppTitle(page.attributes.title || document.title);
     } catch (error) {
-        loadPage('404').catch((error) => console.error('Error loading Error.', error));
+        await handle404(error);
     }
 };
 
