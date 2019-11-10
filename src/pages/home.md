@@ -16,12 +16,12 @@ Yetric helps you and your team become data-driven and more iterative (faster, sm
 
 ## What we _do_ at Yetric
 
--   [Data Driven **User Experience**](/user-experience)
--   [User **Acquisition**](/acquisition)
--   [**Onboarding** New Users](/onboarding)
--   [User **Engagement**](/engagement)
--   [User **Retention**](/retention)
--   [Write **Blog Posts** about stuff we like](/posts)
+-   [Data Driven User Experience](/user-experience)
+-   [User Acquisition](/acquisition)
+-   [Onboarding New Users](/onboarding)
+-   [User Engagement](/engagement)
+-   [User Retention](/retention)
+-   [Write Blog Posts](/posts)
 
 ## Who we _are_ at Yetric
 
