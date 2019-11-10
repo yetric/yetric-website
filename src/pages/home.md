@@ -1,5 +1,5 @@
 ---
-title: Yetric CMS
+title: Yetric AB - Data Driven User Experience - yetric.com
 ---
 
 <h1 class="maintitle">We are <em>Yetric</em></h1>
