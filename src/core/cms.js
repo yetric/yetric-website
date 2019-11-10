@@ -137,9 +137,10 @@ export const navigate = async (path, doPushState = true) => {
 const navigateHandler = async (event) => {
     let {target} = event;
     if (target && target.tagName.toLowerCase() === 'a') {
-        if (!isAbsolute(target.getAttribute('href'))) {
+        const href = target.getAttribute('href');
+        if (!isAbsolute(href)) {
             event.preventDefault();
-            await navigate(target.getAttribute('href'));
+            return await navigate(href);
         } else {
             setAttributes(target, {
                 target: '_blank',
