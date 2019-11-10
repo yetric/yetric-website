@@ -155,7 +155,10 @@ export const nav = async (routes) => {
     const callbacks = [];
 
     window.addEventListener('popstate', popStateHandler);
-    window.addEventListener('beforeunload', removeNavHandlers);
+    window.addEventListener('beforeunload', () => {
+        removeNavHandlers();
+        callbacks.length = 0;
+    });
     document.addEventListener('click', navigateHandler);
 
     await navigate(document.location.pathname, false);
