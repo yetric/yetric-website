@@ -8,6 +8,8 @@ A lot of companies only focus on acquisition, which can be quite expensive, new 
 
 > you can **re-engage** customers who once was engaged customers but for some reason have **churned** out from using your product
 
+## Increase User Retention
+
 By using tools such as Push Notifications, automated email campaigns, remarketing and custom audiences on social network you can re-engage customers who once was engaged customers but for some reason have churned out from using your product. We can help you setting up re-engaging campaigns and automated tools for getting your users back to using your product and increase revenues in a very cost-efficient way.
 
 [Home](/)

@@ -8,6 +8,8 @@ Knowing what your users love about your product and where they have problems usi
 
 > By focusing on the **User Experience** and what value you can add to your users, you can make **prioritization** of features and resources easier
 
+## Data Driven User Experience
+
 At Yetric AB we believe that using data, analysis and insights together with the mindset that the product exists in order to create the best possible value for the user is the best combination to create awesome products that will grow in both user numbers and revenue. As a product owner it is important to learn how the user use the actual product and act accordingly on that data.
 
 [Home](/)
