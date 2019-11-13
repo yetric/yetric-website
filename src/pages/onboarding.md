@@ -10,6 +10,6 @@ One of the most daunting tasks of any product is to show the customer what it ha
 
 ## Onboarding New Users
 
-Sometimes it is tempting to offer a lot of different options for your users, if you are offering one thing and start to get traction on that, why not add something new and get even better results? Maybe that is not a good idea, keeping the offer simple and efficient to the customer is key to a good onboarding process for new users.
+Sometimes it is tempting to offer a lot of different options for your users, if you are offering one thing and start to get traction on that, why not add something new and get even better results? Maybe that is not a good idea, keeping the offer understandable and efficient to the customer is key to a good onboarding process for new users.
 
 [Home](/)
