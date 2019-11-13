@@ -175,6 +175,16 @@ a.btn {
     flex: 1;
 }
 
+.page-img {
+    padding: 0px;
+    margin-left: -19px;
+    margin-right: -19px;
+    margin-bottom: 20px;
+    img {
+        max-width: 100%;
+    }
+}
+
 @media screen and (min-width: 480px) {
     .main {
         padding: 20px;

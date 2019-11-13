@@ -51,6 +51,10 @@ const parseForImages = (page) => {
     return page;
 };
 
+const injectImage = (html, img) => {
+    return html.replace('<!--img-->', `<div class="page-img"><img src="${img}" /></div>`);
+};
+
 export const loadBlogIndex = async (
     feedURL,
     lead = '',
@@ -79,8 +83,16 @@ export const loadPage = async (tpl, type = 'pages') => {
             page = parseForImages(page);
             pageCache[tpl] = page;
         }
+
+        const img = page.attributes.img;
+        let html = page.html;
+        if (img) {
+            const myImg = require('../' + img);
+            html = injectImage(html, myImg);
+        }
+
         removeMetaTag('robots', 'noindex');
-        setAppContent(page.html);
+        setAppContent(html);
         setAppTitle(page.attributes.title || document.title);
     } catch (error) {
         await handle404(error);

@@ -88,6 +88,10 @@ const webpackConfig = {
             {
                 test: /\.md$/,
                 loader: 'frontmatter-markdown-loader'
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: ['file-loader']
             }
         ]
     }
