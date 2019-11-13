@@ -23,9 +23,24 @@ body {
         text-align: center;
         line-height: 48px;
         a[href] {
+            display: block;
             color: $nord4;
             &:hover {
                 text-decoration: none;
+            }
+            &:before {
+                position: relative;
+                top: 10px;
+                left: -5px;
+                content: "d";
+                display: inline-block;
+                height: 28px;
+                width: 28px;
+                background: url("./assets/img/yetric-icon-invert.png");
+                background-size: contain;
+                text-indent: -100000em;
+
+
             }
         }
     }
