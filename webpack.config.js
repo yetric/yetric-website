@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FavIconsWebpackPlugin = require('favicons-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
@@ -61,6 +62,9 @@ const webpackConfig = {
             filename: devMode ? '[name].css' : '[name].[hash].css',
             chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
             ignoreOrder: false // Enable to remove warnings about conflicting order
+        }),
+        new FavIconsWebpackPlugin({
+            logo: './src/assets/img/yetric-icon.png'
         }),
         new OptimizeCssAssetsPlugin(),
         new CleanWebpackPlugin()
