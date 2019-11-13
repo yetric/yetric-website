@@ -8,7 +8,7 @@ There are a couple of ways to get in contact with us. The recommended way is to 
 
 -   [Twitter](https://twitter.com/yetriccom)
 -   [Facebook](https://twitter.com/yetriccom)
--   [E-mail](#contact-form)
+-   [E-mail](mailto:hello@yetric.com)
 -   [Address](#contact-address)
 -   [Map](#contact-map)
 
@@ -16,13 +16,16 @@ There are a couple of ways to get in contact with us. The recommended way is to 
 
 ## Contact Form
 
-Coming ...
+Send an email to [hello@yetric.com](mailto:hello@yetric.com)
 
 ---
 
 ## Contact Address
 
-Coming ...
+__Yetric AB__  
+Apoteksvägen 8D  
+741 40 Knivsta  
+Sweden
 
 ---
 
