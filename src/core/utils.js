@@ -1,4 +1,20 @@
 export const isAbsolute = (url) => !!/^https?:\/\//i.test(url);
+export const isExistingPath = (href) => {
+    const avoidPushURLs = ['/rss.xml', '/sitemap.xml'];
+    return avoidPushURLs.indexOf(href) > -1;
+};
+export const isCustomProtocol = (url) => {
+    const protocols = ['mailto', 'ftp', 'file', 'nntp', 'telnet', 'gopher'];
+    for (let i = 0; i < protocols.length; i++) {
+        const protocol = protocols[i];
+        if (url.startsWith(`${protocol}:`)) {
+            return true;
+        }
+    }
+
+    return false;
+};
+
 export const getTracker = () => {
     return 'ga' in window ? ga.getAll()[0] : null;
 };

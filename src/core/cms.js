@@ -1,4 +1,11 @@
-import {fetchFeed, isAbsolute, setAttributes, trackPageView} from './utils';
+import {
+    fetchFeed,
+    isAbsolute,
+    isCustomProtocol,
+    isExistingPath,
+    setAttributes,
+    trackPageView
+} from './utils';
 import {triggerEvent, on} from './events';
 
 let APP_ROUTES = [];
@@ -150,7 +157,7 @@ const navigateHandler = async (event) => {
     let {target} = event;
     if (target && target.tagName.toLowerCase() === 'a') {
         const href = target.getAttribute('href');
-        if (!isAbsolute(href)) {
+        if (!isAbsolute(href) && !isExistingPath(href) && !isCustomProtocol(url)) {
             event.preventDefault();
             return await navigate(href);
         } else {
