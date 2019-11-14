@@ -15,6 +15,9 @@ export const isCustomProtocol = (url) => {
     return false;
 };
 
+export const isPushStateURL = (href) =>
+    !isAbsolute(href) && !isExistingPath(href) && !isCustomProtocol(href);
+
 export const getTracker = () => {
     return 'ga' in window ? ga.getAll()[0] : null;
 };
