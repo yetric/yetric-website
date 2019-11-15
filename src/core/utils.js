@@ -11,7 +11,6 @@ export const isCustomProtocol = (url) => {
             return true;
         }
     }
-
     return false;
 };
 
@@ -22,22 +21,47 @@ export const getTracker = () => {
     return 'ga' in window ? ga.getAll()[0] : null;
 };
 
+export const getChildContent = (item, child) => {
+    return item.getElementsByTagName(child)[0].textContent;
+};
+
+export const getChilds = (item, children) => {
+    let props = {};
+    children.forEach((key) => {
+        props[key] = getChildContent(item, key);
+    });
+    return props;
+};
+
+export const stripHTML = (text) => {
+    var tmp = document.createElement('DIV');
+    tmp.innerHTML = text;
+    return tmp.textContent || tmp.innerText || '';
+};
+
+export const doExcerpt = (text, length = 160) => {
+    text = stripHTML(text);
+    return text.substr(0, text.lastIndexOf(' ', length)) + '...';
+};
+
+export const parseFeedItem = (item) => {
+    let props = getChilds(item, ['title', 'description', 'link', 'pubDate', 'content:encoded']);
+    props.published = new Date(props.pubDate).toLocaleDateString('sv-SE');
+    props.content = props['content:encoded'];
+    props.excerpt = doExcerpt(props.content);
+
+    delete props['pubDate'];
+    delete props['content:encoded'];
+
+    return props;
+};
+
 export const fetchFeed = async (url) => {
     let response = await fetch(url);
     let xml = await response.text();
     let data = await new window.DOMParser().parseFromString(xml, 'text/xml');
-    return Array.from(data.documentElement.getElementsByTagName('item')).map((item) => {
-        let title = item.getElementsByTagName('title')[0].textContent;
-        let description = item.getElementsByTagName('description')[0].textContent;
-        let link = item.getElementsByTagName('link')[0].textContent;
-        let published = item.getElementsByTagName('pubDate')[0].textContent;
-        return {
-            title,
-            description,
-            link,
-            published: new Date(published).toLocaleDateString('sv-SE')
-        };
-    });
+    const items = Array.from(data.documentElement.getElementsByTagName('item'));
+    return items.map((item) => parseFeedItem(item));
 };
 
 export const send = (...args) => {

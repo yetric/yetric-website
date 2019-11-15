@@ -52,7 +52,10 @@ const parseForImages = (page) => {
 };
 
 const injectImage = (html, img) => {
-    return html.replace('<!--img-->', `<div class="page-img"><img src="${img}" /></div>`);
+    return html.replace(
+        '<!--img-->',
+        `<div class="page-img"><img alt="${img}" src="${img}" /></div>`
+    );
 };
 
 export const loadBlogIndex = async (
@@ -64,7 +67,7 @@ export const loadBlogIndex = async (
 ) => {
     let feed = await fetchFeed(feedURL);
     let links = feed.map((item) => {
-        return `<li><a href="${item.link}">${item.title}</a> <small>(${item.published})</small></li>`;
+        return `<li><a href="${item.link}">${item.title}</a> <small>(${item.published})</small><p class="excerpt">${item.excerpt}</p></li>`;
     });
 
     let content = `<h1>Blog Posts</h1>${lead}${subheader}<ul>${links.join('')}</ul>${footer}`;
