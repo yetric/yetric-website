@@ -6,6 +6,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
 const TerserPlugin = require('terser-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 const overrides = devMode
     ? {
@@ -39,11 +40,7 @@ const overrides = devMode
                           }
                       }
                   })
-              ],
-              splitChunks: {
-                  chunks: 'all',
-                  name: false
-              }
+              ]
           }
       };
 
@@ -67,7 +64,8 @@ const webpackConfig = {
             logo: './src/assets/img/yetric-icon.png'
         }),
         new OptimizeCssAssetsPlugin(),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new CompressionPlugin()
     ],
     module: {
         rules: [
