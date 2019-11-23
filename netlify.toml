@@ -19,6 +19,11 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
+[[headers]]
+  for = "*.jpg" # jpg files too
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
 # The following redirect is intended for use with most SPA's that handles routing internally.
 [[redirects]]
   from = "/*"
