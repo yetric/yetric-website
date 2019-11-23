@@ -6,6 +6,19 @@
   from = "/ux"
   to = "/user-experience"
 
+[[headers]]
+  for = "*.js" # js files should be set this way
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "*.css" # css files too
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "*.png" # png files too
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
 # The following redirect is intended for use with most SPA's that handles routing internally.
 [[redirects]]
   from = "/*"
