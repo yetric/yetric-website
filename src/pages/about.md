@@ -9,5 +9,6 @@ Yetric is a Sweden-based company. It was founded in 2009. We build products, hel
 ## Some basic stuff about Yetric
 
 -   **Why is the company named Yetric?** - You can read our blog post on that - [What's in a name?](https://yetric.net/whats-in-a-name)
+-   **Do Yetric build and run any products?** - Glad you asked, yes we do. Read more about it in [Our Products](/our-products) page.
 
 [Home](/)
