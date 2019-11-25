@@ -31,7 +31,7 @@ Yetric helps you and your team become data-driven and more iterative (faster, sm
 
 ## Find out _more_ about Yetric
 
--   [Yetric Blog about User Experience, Software and Product Development](https://yetric.com)
+-   [Yetric Blog about User Experience, Software and Product Development](https://yetric.net)
 -   [Yetric on Twitter](https://twitter.com/yetriccom)
 -   [Yetric på Twitter (Svenska)](https://twitter.com/yetricab)
 -   [Yetric on Facebook](https://www.facebook.com/yetricapp)
