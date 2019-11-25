@@ -30,3 +30,5 @@ title: Tools we use and endorse - Yetric AB - yetric.com
 - Asesprite
 - Nord Color Scheme
 - DeployHQ
+
+We have made a [list of tools, frameworks and libs](https://github.com/hising/awesome-dev-machine) for setting up a killer-awesome-dev-machine on Github.
