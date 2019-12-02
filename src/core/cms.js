@@ -1,9 +1,22 @@
 import {fetchFeed, isPushStateURL, setAttributes, trackPageView} from './utils';
 import {triggerEvent, on} from './events';
+import {share, supportsNativeShare} from './share';
 
 let APP_ROUTES = [];
 const appRoot = document.getElementById('app');
 const pageCache = {};
+
+const shareElement = document.createElement('div');
+shareElement.id = 'share-doc';
+shareElement.innerHTML = 'Share me';
+
+shareElement.addEventListener('click', (event) => {
+    share({
+        title: document.title,
+        text: document.title,
+        url: location.href
+    });
+});
 
 export const prefetch = async (tpl, type) => {
     pageCache[tpl] = await import(`../${type}/${tpl}.md`);
@@ -41,6 +54,9 @@ export const handle404 = async (error) => {
 
 export const setAppContent = (html) => {
     appRoot.innerHTML = html;
+    if (supportsNativeShare()) {
+        appRoot.insertAdjacentElement('beforeend', shareElement);
+    }
 };
 
 export const setAppTitle = (title) => {
