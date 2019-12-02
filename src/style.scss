@@ -1,4 +1,30 @@
-@import "~nord/src/sass/nord";
+@import '~nord/src/sass/nord';
+
+:root {
+
+    --white: #e8f1fa;
+
+    --light-red: #f64658;
+    --red: #b82133;
+    --dark-red: #62121b;
+
+    --light-green: #92f18d;
+    --green: #5ab059;
+    --dark-green: #3e7a3e;
+
+    --light-blue: #4c96e2;
+    --blue: #3b75b0;
+    --dark-blue: #203e5e;
+
+
+    --light-orange: #fbda69;
+    --orange: #d3a63f;
+    --dark-orange: #a38031;
+
+    --light-gray: #c5c5c5;
+    --gray: #8b8b8b;
+    --dark-gray: #525252;
+}
 
 * {
     box-sizing: border-box;
@@ -8,17 +34,17 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background: $nord6;
+    background: $nord5;
     font-size: 16px;
     line-height: 1.75;
-    color: $nord0;
+    color: $nord3;
     margin: 0;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
     > header {
-        background: transparentize($nord0, .15);
+        background: transparentize($nord0, 0.15);
         color: $nord4;
         text-align: center;
         line-height: 48px;
@@ -32,21 +58,19 @@ body {
                 position: relative;
                 top: 10px;
                 left: -5px;
-                content: "d";
+                content: 'd';
                 display: inline-block;
                 height: 28px;
                 width: 28px;
-                background: url("./assets/img/yetric-icon-invert.png");
+                background: url('./assets/img/yetric-icon-invert.png');
                 background-size: contain;
                 text-indent: -100000em;
-
-
             }
         }
     }
 
     > footer {
-        background: transparentize($nord5, .1);
+        background: transparentize($nord5, 0.1);
         color: darken($nord4, 10%);
         text-align: center;
         padding: 24px 12px;
@@ -77,30 +101,39 @@ a[href] {
 }
 
 blockquote {
-    background: $nord6;
+    background: $nord5;
     margin: 20px 0;
     padding: 6px 40px;
-    font-family: "IBM Plex Serif", serif;
+    font-family: 'IBM Plex Serif', serif;
     font-style: italic;
     font-size: 18px;
     font-weight: 100;
     line-height: 1.5;
     color: $nord3;
-    border-left: 4px solid $nord5;
+    border-left: 4px solid $nord4;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "IBM Plex Sans Condensed", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
     line-height: 1.1;
-    margin: 1.5em 0 .5em;
+    margin: 1.5em 0 0.5em;
     font-weight: 300;
     &:first-child {
-        margin-top: .5em;
+        margin-top: 0.5em;
     }
     > em {
         font-style: normal;
         color: $nord11;
         font-weight: 400;
+        background-image: -webkit-linear-gradient(102deg, var(--green), var(--dark-green));
+        background-color: var(--red);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
     }
     &.subtitle {
         margin-top: 0;
@@ -144,14 +177,14 @@ hr {
 
 a.btn {
     display: inline-block;
-    background: #4f9d49;
+    background: var(--green);
     color: #fff;
     line-height: 38px;
     padding: 0 18px;
     text-decoration: none;
     &:hover {
         text-decoration: none;
-        background: #468b46;
+        background: var(--dark-green);
     }
 }
 
@@ -159,17 +192,17 @@ a.btn {
     max-width: 760px;
     margin: 0 auto;
     padding: 20px;
-    background: #fff;
+    background: $nord6;
     border: 1px solid $nord4;
 
     ul {
         list-style: none;
         padding: 0;
-        margin: 1.75em 0 .75em 0;
+        margin: 1.75em 0 0.75em 0;
         li {
             padding: 2px 0;
             &:before {
-                content: ">";
+                content: '>';
                 font-size: 12px;
                 position: relative;
                 top: -2px;
