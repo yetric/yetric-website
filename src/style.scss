@@ -1,7 +1,6 @@
 @import '~nord/src/sass/nord';
 
 :root {
-
     --white: #e8f1fa;
 
     --light-red: #f64658;
@@ -15,7 +14,6 @@
     --light-blue: #4c96e2;
     --blue: #3b75b0;
     --dark-blue: #203e5e;
-
 
     --light-orange: #fbda69;
     --orange: #d3a63f;
@@ -175,13 +173,14 @@ hr {
     line-height: 0;
 }
 
-a.btn {
+a.btn, button.btn {
     display: inline-block;
     background: var(--green);
     color: #fff;
     line-height: 38px;
     padding: 0 18px;
     text-decoration: none;
+    font-size: 16px;
     &:hover {
         text-decoration: none;
         background: var(--dark-green);
@@ -235,6 +234,50 @@ a.btn {
     margin-bottom: 20px;
     img {
         max-width: 100%;
+    }
+}
+
+#share-doc {
+    cursor: pointer;
+    color: var(--green);
+}
+
+#newsletter {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #e8f1fa;
+}
+
+.form-group {
+    input[type="text"], input[type="email"] {
+        width: 100%;
+        line-height: 32px;
+        font-size: 16px;
+        padding: 0 12px;
+        border: 1px solid #ccc;
+        color: var(--dark-gray);
+        &:focus {
+            outline: none;
+            border: 1px solid var(--light-blue);
+        }
+    }
+    padding-bottom: 12px;
+}
+
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
+    .form-check-input {
+        position: absolute;
+        top: 4px;
+        margin-top: .3rem;
+        margin-left: -1.25rem;
+    }
+    .form-check-label {
+        font-size: 12px;
+        line-height: 12px;
     }
 }
 

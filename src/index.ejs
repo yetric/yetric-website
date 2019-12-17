@@ -20,6 +20,35 @@
     <section class="main">
       <div id="app"></div>
     </section>
+    <section class="newsletter" id="newsletter">
+      <h3>Subscribe to our newsletter</h3>
+      <form action="https://email.yetric.org/subscribe" target="_blank" method="POST" accept-charset="utf-8">
+        <div class="form-group">
+          <label for="name">Name</label><br/>
+          <input type="text" name="name" id="name" placeholder="Your name"/>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label><br/>
+          <input type="email" name="email" id="email" placeholder="Your e-mail address"/>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" name="gdpr" id="gdpr"/>
+          <label class="form-check-label" for="gdpr">I give my consent to  to be in touch with me via email for the purpose of news, updates and marketing.</label>
+        </div>
+
+        <div style="display:none;">
+          <label for="hp">HP</label><br/>
+          <input type="text" name="hp" id="hp"/>
+        </div>
+        <input type="hidden" name="list" value="PvoBw763ZagED0m8WJzM3UQg"/>
+        <input type="hidden" name="subform" value="yes"/>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+      </form>
+    </section>
     <footer>&copy; <script type="text/javascript">
         document.write(new Date().getFullYear());
       </script> - Yetric AB
