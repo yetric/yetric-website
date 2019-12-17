@@ -243,10 +243,12 @@ a.btn, button.btn {
 }
 
 #newsletter {
+    width: 100%;
     max-width: 760px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     padding: 20px;
     background: #e8f1fa;
+
 }
 
 .form-group {
