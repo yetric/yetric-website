@@ -255,7 +255,7 @@ a.btn, button.btn {
     label {
         display: block;
     }
-    input {
+    input:not([type="checkbox"]) {
         width: 100%;
         line-height: 32px;
         font-size: 16px;
