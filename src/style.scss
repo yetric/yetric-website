@@ -252,7 +252,10 @@ a.btn, button.btn {
 }
 
 .form-group {
-    input[type="text"], input[type="email"] {
+    label {
+        display: block;
+    }
+    input {
         width: 100%;
         line-height: 32px;
         font-size: 16px;
