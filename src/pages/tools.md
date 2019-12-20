@@ -8,6 +8,8 @@ title: Tools we use and endorse - Yetric AB - yetric.com
 -   Netlify
 -   Github
 -   Google Analytics
+-   Google Data Studio
+-   Google Search Console
 -   CircleCI
 -   Mixpanel
 -   Mautic
@@ -28,6 +30,7 @@ title: Tools we use and endorse - Yetric AB - yetric.com
 -   Slack
 -   Sequel Pro
 -   Asesprite
+-   Pixaki Pixel Art Studio
 -   Nord Color Scheme
 -   DeployHQ
 
