@@ -9,12 +9,12 @@ title: Tools we use and endorse - Yetric AB - yetric.com
 -   Github
 -   Google Analytics
 -   Google Data Studio
--   Google Search Console
 -   CircleCI
 -   Mixpanel
 -   Mautic
 -   Matomo
 -   Mailchimp
+-   Sendy
 -   Blender
 -   Unity
 -   JetBrains IDE
@@ -27,6 +27,7 @@ title: Tools we use and endorse - Yetric AB - yetric.com
 -   Pingdom
 -   DigitalOcean
 -   Glesys
+-   Gandi
 -   Slack
 -   Sequel Pro
 -   Asesprite
