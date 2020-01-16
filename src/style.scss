@@ -1,27 +1,31 @@
-@import '~nord/src/sass/nord';
-
 :root {
-    --white: #e8f1fa;
-
-    --light-red: #f64658;
-    --red: #b82133;
-    --dark-red: #62121b;
-
-    --light-green: #92f18d;
-    --green: #5ab059;
-    --dark-green: #3e7a3e;
-
-    --light-blue: #4c96e2;
-    --blue: #3b75b0;
-    --dark-blue: #203e5e;
-
-    --light-orange: #fbda69;
-    --orange: #d3a63f;
-    --dark-orange: #a38031;
-
-    --light-gray: #c5c5c5;
-    --gray: #8b8b8b;
-    --dark-gray: #525252;
+    --black-tint: #999999;
+    --black: #1d1d1d;
+    --black-shade: #161616;
+    --white-tint: #fbfbfb;
+    --white: #f7f7f7;
+    --white-shade: #b9b9b9;
+    --gray-tint: #cbd5db;
+    --gray: #5e747f;
+    --gray-shade: #47575f;
+    --blue-tint: #9ed5eb;
+    --blue: #27a2d2;
+    --blue-shade: #1d7a9e;
+    --green-tint: #cde2bd;
+    --green: #90be6d;
+    --green-shade: #6c8f52;
+    --red-tint: #f1a698;
+    --red: #df3a1a;
+    --red-shade: #a72c14;
+    --pink-tint: #f3e3e1;
+    --pink: #e5c1bd;
+    --pink-shade: #ac918e;
+    --orange-tint: #f6cd93;
+    --orange: #ea9010;
+    --orange-shade: #b06c0c;
+    --yellow-tint: #f6efa0;
+    --yellow: #eadb2c;
+    --yellow-shade: #b0a421;
 }
 
 * {
@@ -32,23 +36,23 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background: $nord5;
+    background: var(--gray-tint);
     font-size: 16px;
     line-height: 1.75;
-    color: $nord3;
+    color: var(--black);
     margin: 0;
     font-family: 'IBM Plex Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
     > header {
-        background: transparentize($nord0, 0.15);
-        color: $nord4;
+        background: transparentize(#1d1d1d, 0.15);
+        color: var(--gray-tint);
         text-align: center;
         line-height: 48px;
         a[href] {
             display: block;
-            color: $nord4;
+            color: var(--white);
             &:hover {
                 text-decoration: none;
             }
@@ -68,8 +72,8 @@ body {
     }
 
     > footer {
-        background: transparentize($nord5, 0.1);
-        color: darken($nord4, 10%);
+        background: transparentize(#b9b9b9, 0.1);
+        color: var(--white-shade);
         text-align: center;
         padding: 24px 12px;
         font-size: 14px;
@@ -99,7 +103,7 @@ a[href] {
 }
 
 blockquote {
-    background: $nord5;
+    background: var(--gray-tint);
     margin: 20px 0;
     padding: 6px 40px;
     font-family: 'IBM Plex Serif', serif;
@@ -107,8 +111,8 @@ blockquote {
     font-size: 18px;
     font-weight: 100;
     line-height: 1.5;
-    color: $nord3;
-    border-left: 4px solid $nord4;
+    color: var(--gray-shade);
+    border-left: 1px solid var(--gray);
 }
 
 h1,
@@ -120,16 +124,12 @@ h6 {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     line-height: 1.1;
     margin: 1.5em 0 0.5em;
-    font-weight: 300;
     &:first-child {
         margin-top: 0.5em;
     }
     > em {
         font-style: normal;
-        color: $nord11;
-        font-weight: 400;
-        background-image: -webkit-linear-gradient(102deg, var(--green), var(--dark-green));
-        background-color: var(--red);
+        background-image: -webkit-linear-gradient(102deg, var(--green), var(--green-shade));
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
@@ -168,7 +168,7 @@ p {
 hr {
     border-width: 0;
     border-style: none;
-    border-top: 1px solid $nord6;
+    border-top: 1px solid var(--white-shade);
     margin: 30px 0 0 0;
     line-height: 0;
 }
@@ -183,7 +183,7 @@ a.btn, button.btn {
     font-size: 16px;
     &:hover {
         text-decoration: none;
-        background: var(--dark-green);
+        background: var(--green-shade);
     }
 }
 
@@ -191,9 +191,9 @@ a.btn, button.btn {
     max-width: 760px;
     margin: 0 auto;
     padding: 20px;
-    background: $nord6;
-    border: 1px solid $nord4;
-
+    background: #fff;
+    border: 1px solid var(--white-shade);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, .05);
     ul {
         list-style: none;
         padding: 0;
@@ -217,7 +217,7 @@ a.btn, button.btn {
             .excerpt {
                 margin: 0;
                 font-size: 14px;
-                color: $nord3;
+                color: var(--gray-shade);
             }
         }
     }
@@ -276,8 +276,7 @@ a.btn, button.btn {
     padding-left: 1.25rem;
     .form-check-input {
         position: absolute;
-        top: 4px;
-        margin-top: .3rem;
+        top: -3px;
         margin-left: -1.25rem;
     }
     .form-check-label {
