@@ -8,6 +8,7 @@ From time to time, an idea pops up or a personal itch needs to be scratched. Tha
 
 ## Live (in different forms)
 
+-   [Stats and Graphs on Covid-19 (Corona) - CoronaData.se](https://coronadata.se/)
 -   [Mäklarinfo](https://xn--mklarinfo-v2a.se/)
 -   [Doon](https://doon.se/)
 -   [Allt om PS4](https://alltomps4.se/)
