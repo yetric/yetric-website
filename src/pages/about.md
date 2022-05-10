@@ -9,7 +9,6 @@ Yetric is a Sweden-based company. It was founded in 2009. We build products, hel
 ## People
 
 -   [Mattias Hising](/mattias-hising)
--   [Erik Lundin](/erik-lundin)
 
 ## Some basic stuff about Yetric
 
