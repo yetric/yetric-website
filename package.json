@@ -26,7 +26,7 @@
         "@babel/core": "^7.7.2",
         "@babel/preset-env": "^7.7.1",
         "@babel/preset-react": "^7.7.0",
-        "alex": "^8.0.1",
+        "alex": "^11.0.0",
         "babel-loader": "^8.0.6",
         "clean-webpack-plugin": "^3.0.0",
         "compression-webpack-plugin": "^3.0.0",
